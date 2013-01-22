@@ -19,4 +19,10 @@ class MoneyTest(TestCase):
 
     def test_initialize_with_inexistent_currency_code(self):
     	with self.assertRaisesRegexp(CurrencyError, 'Currency does not exist.'):
-    		money = Money(1000, 'notexist')
+            Money(1000, 'notexist')
+
+    def test_initialize_without_currency(self):
+        money = Money(1000)
+
+        self.assertEqual(Currency.get_default(), money.currency)
+

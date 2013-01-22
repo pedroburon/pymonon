@@ -14,17 +14,26 @@ class Currency(object):
     def __eq__(self, other):
         return self.code == other.code
 
+    @staticmethod
+    def get_default():
+        return DEFAULT_CURRENCY
+
 
 class Money(object):
-    def __init__(self, amount, currency):
+    def __init__(self, amount, currency=None):
+        self.__set_currency(currency)
         self.amount = amount
-        if isinstance(currency, Currency):
+
+    def __set_currency(self, currency):
+        if currency is None:
+            self.currency = Currency.get_default()
+        elif isinstance(currency, Currency):
             self.currency = currency
+        elif (isinstance(currency, str) or isinstance(currency, unicode)) and currency.upper() in CURRENCIES:
+            self.currency = CURRENCIES[currency.upper()]
         else:
-            try:
-                self.currency = CURRENCIES[currency.upper()]
-            except KeyError:
-                raise CurrencyError('Currency does not exist.')
+            raise CurrencyError('Currency does not exist.')
+
 
     def __cmp__(self, other):
         if not isinstance(other, Money):
@@ -61,10 +70,11 @@ class Money(object):
         amount = self.amount / other
         return Money(amount, currency=self.currency)
 
-CURRENCIES = {
-    'USD': Currency(code='USD', name='US Dollar'),
-    'EUR': Currency(code='EUR', name='Euro')
-}
+
+def set_default_currency(currency):
+    global DEFAULT_CURRENCY
+    add_currency(currency)
+    DEFAULT_CURRENCY = currency
 
 
 def add_currency(currency):
@@ -72,3 +82,11 @@ def add_currency(currency):
     CURRENCIES.update({
         currency.code: currency
     })
+
+
+CURRENCIES = {
+    'USD': Currency(code='USD', name='US Dollar'),
+    'EUR': Currency(code='EUR', name='Euro')
+}
+
+DEFAULT_CURRENCY = CURRENCIES['USD']

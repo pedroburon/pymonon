@@ -1,3 +1,4 @@
+# encoding=UTF-8
 from unittest import TestCase
 
 from pymonon import Currency, Money, CurrencyError, CURRENCIES
@@ -25,4 +26,10 @@ class MoneyTest(TestCase):
         money = Money(1000)
 
         self.assertEqual(Currency.get_default(), money.currency)
+
+    def test_unicode(self):
+        money = Money(1000, 'UZS')
+
+        self.assertEqual(u'лв1000', unicode(money))
+
 

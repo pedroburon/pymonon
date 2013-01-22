@@ -1,3 +1,5 @@
+# encoding=UTF-8
+from pymonon.currencies import CURRENCIES_CODES
 
 __version__ = '0.0.1'
 
@@ -7,9 +9,10 @@ class CurrencyError(Exception):
 
 
 class Currency(object):
-    def __init__(self, code, name):
+    def __init__(self, code, name, symbol=u'$'):
         self.code = code.upper()
         self.name = name
+        self.symbol = symbol
 
     def __eq__(self, other):
         return self.code == other.code
@@ -17,6 +20,9 @@ class Currency(object):
     @staticmethod
     def get_default():
         return DEFAULT_CURRENCY
+
+    def __unicode__(self):
+        return unicode(self.symbol)
 
 
 class Money(object):
@@ -33,7 +39,6 @@ class Money(object):
             self.currency = CURRENCIES[currency.upper()]
         else:
             raise CurrencyError('Currency does not exist.')
-
 
     def __cmp__(self, other):
         if not isinstance(other, Money):
@@ -70,6 +75,9 @@ class Money(object):
         amount = self.amount / other
         return Money(amount, currency=self.currency)
 
+    def __unicode__(self):
+        return u'%s%s' % (self.currency, self.amount)
+
 
 def set_default_currency(currency):
     global DEFAULT_CURRENCY
@@ -83,10 +91,9 @@ def add_currency(currency):
         currency.code: currency
     })
 
+CURRENCIES = {}
 
-CURRENCIES = {
-    'USD': Currency(code='USD', name='US Dollar'),
-    'EUR': Currency(code='EUR', name='Euro')
-}
+for name, code, symbol in CURRENCIES_CODES:
+    add_currency(Currency(code=code, name=name, symbol=symbol))
 
 DEFAULT_CURRENCY = CURRENCIES['USD']

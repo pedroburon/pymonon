@@ -35,7 +35,7 @@ class Money(object):
             self.currency = Currency.get_default()
         elif isinstance(currency, Currency):
             self.currency = currency
-        elif (isinstance(currency, str) or isinstance(currency, unicode)) and currency.upper() in CURRENCIES:
+        elif isinstance(currency, basestring) and currency.upper() in CURRENCIES:
             self.currency = CURRENCIES[currency.upper()]
         else:
             raise CurrencyError('Currency does not exist.')

@@ -1,9 +1,9 @@
-from compatibility import TestCase
+from compatibility import CompatibilityTestCase
 
 from pymonon import Currency
 
 
-class ImportCurrenciesTest(TestCase):
+class ImportCurrenciesTest(CompatibilityTestCase):
     def test_import(self):
         from pymonon import CURRENCIES
 

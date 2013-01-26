@@ -1,10 +1,10 @@
 # encoding=UTF-8
-from compatibility import TestCase
+from compatibility import CompatibilityTestCase
 
 from pymonon import Currency, CURRENCIES
 
 
-class CurrencyTest(TestCase):
+class CurrencyTest(CompatibilityTestCase):
     def test_create_instance(self):
         currency = Currency(code='usd', name='US Dollar', symbol=u'$P')
         self.assertIsInstance(currency, Currency)

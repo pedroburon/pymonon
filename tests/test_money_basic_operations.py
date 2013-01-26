@@ -1,10 +1,10 @@
 from __future__ import with_statement
-from compatibility import TestCase
+from compatibility import CompatibilityTestCase
 
 from pymonon import Money
 
 
-class TestBasicOperationsSameCurrency(TestCase):
+class TestBasicOperationsSameCurrency(CompatibilityTestCase):
 
     def test_cmp(self):
         money1 = Money(1000, 'usd')

@@ -1,11 +1,11 @@
 # encoding=UTF-8
 from __future__ import with_statement
-from compatibility import TestCase
+from compatibility import CompatibilityTestCase
 
 from pymonon import Currency, Money, CurrencyError, CURRENCIES
 
 
-class MoneyTest(TestCase):
+class MoneyTest(CompatibilityTestCase):
     def test_initialize(self):
     	currency = CURRENCIES['USD']
         money = Money(1000, 'usd')

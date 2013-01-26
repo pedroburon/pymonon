@@ -20,9 +20,9 @@ setup(name='pymonon',
       tests_require=['nose'],
       setup_requires=['distribute'],
       classifiers=[
-          'Development Status :: 1 - Planning',
-          'Programming Language :: Python :: 2 :: Only',
-          'Topic :: Software Development :: Libraries :: Python Modules',
-          'Topic :: Office/Business :: Financial :: Accounting',
+          u'Development Status :: 1 - Planning',
+          u'Programming Language :: Python :: 2 :: Only',
+          u'Topic :: Software Development :: Libraries :: Python Modules',
+          u'Topic :: Office/Business :: Financial :: Accounting',
       ]
       )

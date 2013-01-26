@@ -1,5 +1,6 @@
 # encoding=UTF-8
-from unittest import TestCase
+from __future__ import with_statement
+from compatibility import TestCase
 
 from pymonon import Currency, Money, CurrencyError, CURRENCIES
 

@@ -1,7 +1,7 @@
 # encoding=UTF-8
 from pymonon.currencies import CURRENCIES_CODES
 
-__version__ = '0.0.1'
+__version__ = '0.0.1-dev'
 
 
 class CurrencyError(Exception):
@@ -9,7 +9,7 @@ class CurrencyError(Exception):
 
 
 class Currency(object):
-    def __init__(self, code, name, symbol=u'$'):
+    def __init__(self, code, name=None, symbol=u'$'):
         self.code = code.upper()
         self.name = name
         self.symbol = symbol

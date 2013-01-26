@@ -1,5 +1,5 @@
 # encoding=UTF-8
-from unittest import TestCase
+from compatibility import TestCase
 
 from pymonon import Currency, CURRENCIES
 
@@ -33,5 +33,5 @@ class CurrencyTest(TestCase):
 
     def test_unicode(self):
         currency = CURRENCIES['UZS']
-        
+
         self.assertEqual(u'лв', unicode(currency))

@@ -1,26 +1,28 @@
 #!/usr/bin/env python
 # encoding=UTF-8
 
-from distribute_setup import use_setuptools
-use_setuptools()
+from setuptools import setup
 
 try:
     import multiprocessing
 except ImportError:
     pass
 
-from setuptools import setup
-
-from pymonon import __version__
-
 
 setup(name='pymonon',
-      version=__version__,
+      version=__import__('pymonon').__version__,
       description='Python Money Helper',
       author=u'Pedro Burón',
       author_email='pedroburonv@gmail.com',
       url='http://pedroburon.info',
       test_suite='nose.collector',
       packages=['pymonon'],
-      tests_require=['nose']
-     )
+      tests_require=['nose'],
+      setup_requires=['distribute'],
+      classifiers=[
+          'Development Status :: 1 - Planning',
+          'Programming Language :: Python :: 2 :: Only',
+          'Topic :: Software Development :: Libraries :: Python Modules',
+          'Topic :: Office/Business :: Financial :: Accounting',
+      ]
+      )

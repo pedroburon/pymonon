@@ -1,4 +1,4 @@
-from unittest import TestCase
+from compatibility import TestCase
 
 from pymonon import Currency
 

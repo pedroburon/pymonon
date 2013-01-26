@@ -1,4 +1,5 @@
-from unittest import TestCase
+from __future__ import with_statement
+from compatibility import TestCase
 
 from pymonon import Money
 

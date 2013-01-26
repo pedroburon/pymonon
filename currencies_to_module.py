@@ -14,7 +14,11 @@ def main():
         with open(os.path.join(here, 'pymonon', 'currencies.py'), 'w') as module:
             module.write('# Module created by currencies_to_module.py from currencies.csv\n\n')
             module.write('CURRENCIES_CODES = (\n')
+            first = True
             for line in csv.readlines():
+                if first:
+                    first = False
+                    continue
                 name, code, symbols = map(lambda x: x.strip(), line.strip().split(';'))
                 symbol = map(lambda x: x.strip(), symbols.split(','))
                 symbol = map(fill_zeros, symbol)

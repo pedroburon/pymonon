@@ -12,7 +12,7 @@ except ImportError:
 setup(name='pymonon',
       version=__import__('pymonon').__version__,
       description='Python Money Helper',
-      author=u'Pedro Burón',
+      author=u'Pedro Buron',
       author_email='pedroburonv@gmail.com',
       url='http://pedroburon.info',
       test_suite='nose.collector',
@@ -20,9 +20,9 @@ setup(name='pymonon',
       tests_require=['nose'],
       setup_requires=['distribute'],
       classifiers=[
-          u'Development Status :: 1 - Planning',
-          u'Programming Language :: Python :: 2 :: Only',
-          u'Topic :: Software Development :: Libraries :: Python Modules',
-          u'Topic :: Office/Business :: Financial :: Accounting',
+          'Development Status :: 1 - Planning',
+          'Programming Language :: Python :: 2 :: Only',
+          'Topic :: Software Development :: Libraries :: Python Modules',
+          'Topic :: Office/Business :: Financial :: Accounting',
       ]
       )

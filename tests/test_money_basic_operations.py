@@ -82,7 +82,7 @@ class TestBasicOperationsSameCurrency(CompatibilityTestCase):
             money / other
 
 
-class TestBasicDifferentCurrency(TestCase):
+class TestBasicDifferentCurrency(CompatibilityTestCase):
     def setUp(self):
         self.money = Money(1000, 'usd')
         self.other = Money(2000, 'eur')

@@ -4,7 +4,7 @@ Python Money Helper
 
 .. image:: https://travis-ci.org/pedroburon/pymonon.png?branch=master
    :alt: Build Status
-   :target: https://travis-ci.org/witoi/django-jqueryfileupload
+   :target: https://travis-ci.org/pedroburon/pymonon
 
 
 Library for working with currencies, created from scratch for learning purposes.

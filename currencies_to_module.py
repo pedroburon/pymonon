@@ -19,18 +19,18 @@ def main():
                 if first:
                     first = False
                     continue
-                name, code, symbols = map(lambda x: x.strip(), line.strip().split(';'))
+                name, code, symbols, decimals= map(lambda x: x.strip(), line.strip().split(';'))
                 symbol = map(lambda x: x.strip(), symbols.split(','))
                 symbol = map(fill_zeros, symbol)
                 symbol = map(lambda x: '\\u' + x, symbol)
                 symbol = reduce(lambda x, y: x + y, symbol, '')
-                module.write("\t(\"%s\", \"%s\", u\"%s\"),\n" % (name, code, symbol))
+                module.write("\t(\"%s\", \"%s\", u\"%s\", %s),\n" % (name, code, symbol, decimals))
             module.write(')\n')
 
     from pymonon.currencies import CURRENCIES_CODES
 
     for currency in CURRENCIES_CODES:
-        print u"%s, %s, %s" % currency
+        print u"%s, %s, %s, %s" % currency
 
 if __name__ == '__main__':
     main()

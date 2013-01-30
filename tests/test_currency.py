@@ -6,11 +6,12 @@ from pymonon import Currency, CURRENCIES
 
 class CurrencyTest(CompatibilityTestCase):
     def test_create_instance(self):
-        currency = Currency(code='usd', name='US Dollar', symbol=u'$P')
+        currency = Currency(code='usd', name='US Dollar', symbol=u'$P', decimals=1)
         self.assertIsInstance(currency, Currency)
         self.assertEqual('USD', currency.code)
         self.assertEqual('US Dollar', currency.name)
         self.assertEqual(u'$P', currency.symbol)
+        self.assertEqual(1, currency.decimals)
 
     def test_create_instance_default_symbol(self):
         currency = Currency(code='usd', name='US Dollar')
@@ -18,6 +19,11 @@ class CurrencyTest(CompatibilityTestCase):
         self.assertEqual('USD', currency.code)
         self.assertEqual('US Dollar', currency.name)
         self.assertEqual(u'$', currency.symbol)
+
+    def test_create_instance_default_decimals(self):
+        currency = Currency(code='usd', name='US Dollar')
+        self.assertIsInstance(currency, Currency)
+        self.assertEqual(2, currency.decimals)
 
     def test_equal(self):
         currency1 = Currency('usd', name='US Dollar')

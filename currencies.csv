@@ -1,114 +1,105 @@
-name;code;symbol
-Albania Lek;ALL;4c, 65, 6b
-Afghanistan Afghani;AFN;60b
-Argentina Peso;ARS;24
-Aruba Guilder;AWG;192
-Australia Dollar;AUD;24
-Azerbaijan New Manat;AZN;43c, 430, 43d
-Bahamas Dollar;BSD;24
-Barbados Dollar;BBD;24
-Belarus Ruble;BYR;70, 2e
-Belize Dollar;BZD;42, 5a, 24
-Bermuda Dollar;BMD;24
-Bolivia Boliviano;BOB;24, 62
-Bosnia and Herzegovina Convertible Marka;BAM;4b, 4d
-Botswana Pula;BWP;50
-Bulgaria Lev;BGN;43b, 432
-Brazil Real;BRL;52, 24
-Brunei Darussalam Dollar;BND;24
-Cambodia Riel;KHR;17db
-Canada Dollar;CAD;24
-Cayman Islands Dollar;KYD;24
-Chile Peso;CLP;24
-China Yuan Renminbi;CNY;a5
-Colombia Peso;COP;24
-Costa Rica Colon;CRC;20a1
-Croatia Kuna;HRK;6b, 6e
-Cuba Peso;CUP;20b1
-Czech Republic Koruna;CZK;4b, 10d
-Denmark Krone;DKK;6b, 72
-Dominican Republic Peso;DOP;52, 44, 24
-East Caribbean Dollar;XCD;24
-Egypt Pound;EGP;a3
-El Salvador Colon;SVC;24
-Estonia Kroon;EEK;6b, 72
-Euro Member Countries;EUR;20ac
-Falkland Islands (Malvinas) Pound;FKP;a3
-Fiji Dollar;FJD;24
-Ghana Cedis;GHC;a2
-Gibraltar Pound;GIP;a3
-Guatemala Quetzal;GTQ;51
-Guernsey Pound;GGP;a3
-Guyana Dollar;GYD;24
-Honduras Lempira;HNL;4c
-Hong Kong Dollar;HKD;24
-Hungary Forint;HUF;46, 74
-Iceland Krona;ISK;6b, 72
-India Rupee;INR;
-Indonesia Rupiah;IDR;52, 70
-Iran Rial;IRR;fdfc
-Isle of Man Pound;IMP;a3
-Israel Shekel;ILS;20aa
-Jamaica Dollar;JMD;4a, 24
-Japan Yen;JPY;a5
-Jersey Pound;JEP;a3
-Kazakhstan Tenge;KZT;43b, 432
-Korea (North) Won;KPW;20a9
-Korea (South) Won;KRW;20a9
-Kyrgyzstan Som;KGS;43b, 432
-Laos Kip;LAK;20ad
-Latvia Lat;LVL;4c, 73
-Lebanon Pound;LBP;a3
-Liberia Dollar;LRD;24
-Lithuania Litas;LTL;4c, 74
-Macedonia Denar;MKD;434, 435, 43d
-Malaysia Ringgit;MYR;52, 4d
-Mauritius Rupee;MUR;20a8
-Mexico Peso;MXN;24
-Mongolia Tughrik;MNT;20ae
-Mozambique Metical;MZN;4d, 54
-Namibia Dollar;NAD;24
-Nepal Rupee;NPR;20a8
-Netherlands Antilles Guilder;ANG;192
-New Zealand Dollar;NZD;24
-Nicaragua Cordoba;NIO;43, 24
-Nigeria Naira;NGN;20a6
-Norway Krone;NOK;6b, 72
-Oman Rial;OMR;fdfc
-Pakistan Rupee;PKR;20a8
-Panama Balboa;PAB;42, 2f, 2e
-Paraguay Guarani;PYG;47, 73
-Peru Nuevo Sol;PEN;53, 2f, 2e
-Philippines Peso;PHP;20b1
-Poland Zloty;PLN;7a, 142
-Qatar Riyal;QAR;fdfc
-Romania New Leu;RON;6c, 65, 69
-Russia Ruble;RUB;440, 443, 431
-Saint Helena Pound;SHP;a3
-Saudi Arabia Riyal;SAR;fdfc
-Serbia Dinar;RSD;414, 438, 43d, 2e
-Seychelles Rupee;SCR;20a8
-Singapore Dollar;SGD;24
-Solomon Islands Dollar;SBD;24
-Somalia Shilling;SOS;53
-South Africa Rand;ZAR;52
-Sri Lanka Rupee;LKR;20a8
-Sweden Krona;SEK;6b, 72
-Switzerland Franc;CHF;43, 48, 46
-Suriname Dollar;SRD;24
-Syria Pound;SYP;a3
-Taiwan New Dollar;TWD;4e, 54, 24
-Thailand Baht;THB;e3f
-Trinidad and Tobago Dollar;TTD;54, 54, 24
-Turkey Lira;TRY;
-Turkey Lira;TRL;20a4
-Tuvalu Dollar;TVD;24
-Ukraine Hryvna;UAH;20b4
-United Kingdom Pound;GBP;a3
-United States Dollar;USD;24
-Uruguay Peso;UYU;24, 55
-Uzbekistan Som;UZS;43b, 432
-Venezuela Bolivar;VEF;42, 73
-Viet Nam Dong;VND;20ab
-Yemen Rial;YER;fdfc
-Zimbabwe Dollar;ZWD;5a, 24
+name;code;symbol;decimals
+Albania Lek;ALL;4c, 65, 6b;2
+Afghanistan Afghani;AFN;60b;2
+Argentina Peso;ARS;24;2
+Aruba Guilder;AWG;192;2
+Australia Dollar;AUD;24;2
+Azerbaijan New Manat;AZN;43c, 430, 43d;2
+Bahamas Dollar;BSD;24;2
+Barbados Dollar;BBD;24;2
+Belarus Ruble;BYR;70, 2e;0
+Belize Dollar;BZD;42, 5a, 24;2
+Bermuda Dollar;BMD;24;2
+Bolivia Boliviano;BOB;24, 62;2
+Bosnia and Herzegovina Convertible Marka;BAM;4b, 4d;2
+Botswana Pula;BWP;50;2
+Bulgaria Lev;BGN;43b, 432;2
+Brazil Real;BRL;52, 24;2
+Brunei Darussalam Dollar;BND;24;2
+Cambodia Riel;KHR;17db;2
+Canada Dollar;CAD;24;2
+Cayman Islands Dollar;KYD;24;2
+Chile Peso;CLP;24;0
+China Yuan Renminbi;CNY;a5;2
+Colombia Peso;COP;24;2
+Costa Rica Colon;CRC;20a1;2
+Croatia Kuna;HRK;6b, 6e;2
+Cuba Peso;CUP;20b1;2
+Czech Republic Koruna;CZK;4b, 10d;2
+Denmark Krone;DKK;6b, 72;2
+Dominican Republic Peso;DOP;52, 44, 24;2
+East Caribbean Dollar;XCD;24;2
+Egypt Pound;EGP;a3;2
+Euro Member Countries;EUR;20ac;2
+Falkland Islands (Malvinas) Pound;FKP;a3;2
+Fiji Dollar;FJD;24;2
+Gibraltar Pound;GIP;a3;2
+Guatemala Quetzal;GTQ;51;2
+Guyana Dollar;GYD;24;2
+Honduras Lempira;HNL;4c;2
+Hong Kong Dollar;HKD;24;2
+Hungary Forint;HUF;46, 74;2
+Iceland Krona;ISK;6b, 72;0
+India Rupee;INR;;2
+Indonesia Rupiah;IDR;52, 70;2
+Iran Rial;IRR;fdfc;0
+Israel Shekel;ILS;20aa;2
+Jamaica Dollar;JMD;4a, 24;2
+Japan Yen;JPY;a5;0
+Kazakhstan Tenge;KZT;43b, 432;2
+Korea (North) Won;KPW;20a9;0
+Korea (South) Won;KRW;20a9;0
+Kyrgyzstan Som;KGS;43b, 432;2
+Laos Kip;LAK;20ad;0
+Latvia Lat;LVL;4c, 73;2
+Lebanon Pound;LBP;a3;0
+Liberia Dollar;LRD;24;2
+Lithuania Litas;LTL;4c, 74;2
+Macedonia Denar;MKD;434, 435, 43d;0
+Malaysia Ringgit;MYR;52, 4d;2
+Mauritius Rupee;MUR;20a8;2
+Mexico Peso;MXN;24;2
+Mongolia Tughrik;MNT;20ae;2
+Mozambique Metical;MZN;4d, 54;2
+Namibia Dollar;NAD;24;2
+Nepal Rupee;NPR;20a8;2
+Netherlands Antilles Guilder;ANG;192;2
+New Zealand Dollar;NZD;24;2
+Nicaragua Cordoba;NIO;43, 24;2
+Nigeria Naira;NGN;20a6;2
+Norway Krone;NOK;6b, 72;2
+Oman Rial;OMR;fdfc;3
+Pakistan Rupee;PKR;20a8;2
+Panama Balboa;PAB;42, 2f, 2e;2
+Paraguay Guarani;PYG;47, 73;0
+Peru Nuevo Sol;PEN;53, 2f, 2e;2
+Philippines Peso;PHP;20b1;2
+Poland Zloty;PLN;7a, 142;2
+Qatar Riyal;QAR;fdfc;2
+Romania New Leu;RON;6c, 65, 69;2
+Russia Ruble;RUB;440, 443, 431;2
+Saint Helena Pound;SHP;a3;2
+Saudi Arabia Riyal;SAR;fdfc;2
+Serbia Dinar;RSD;414, 438, 43d, 2e;2
+Seychelles Rupee;SCR;20a8;2
+Singapore Dollar;SGD;24;2
+Solomon Islands Dollar;SBD;24;2
+Somalia Shilling;SOS;53;2
+South Africa Rand;ZAR;52;2
+Sri Lanka Rupee;LKR;20a8;2
+Sweden Krona;SEK;6b, 72;2
+Switzerland Franc;CHF;43, 48, 46;2
+Suriname Dollar;SRD;24;2
+Syria Pound;SYP;a3;2
+Taiwan New Dollar;TWD;4e, 54, 24;2
+Thailand Baht;THB;e3f;2
+Trinidad and Tobago Dollar;TTD;54, 54, 24;2
+Turkey Lira;TRY;;2
+Ukraine Hryvna;UAH;20b4;2
+United Kingdom Pound;GBP;a3;2
+United States Dollar;USD;24;2
+Uruguay Peso;UYU;24, 55;2
+Uzbekistan Som;UZS;43b, 432;2
+Venezuela Bolivar;VEF;42, 73;2
+Viet Nam Dong;VND;20ab;0
+Yemen Rial;YER;fdfc;2

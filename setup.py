@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding=UTF-8
-
+import os
 from setuptools import setup
 
 try:
@@ -9,9 +9,14 @@ except ImportError:
     pass
 
 
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+
 setup(name='pymonon',
       version=__import__('pymonon').__version__,
       description='Python Money Helper',
+      long_description=read('README.rst'),
       author=u'Pedro Buron',
       author_email='pedroburonv@gmail.com',
       url='http://pedroburon.info',

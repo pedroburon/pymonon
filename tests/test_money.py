@@ -8,20 +8,20 @@ from pymonon import Currency, Money, CurrencyError, CURRENCIES
 
 class MoneyTest(CompatibilityTestCase):
     def test_initialize(self):
-    	currency = CURRENCIES['USD']
+        currency = CURRENCIES['USD']
         money = Money(1000, 'usd')
 
         self.assertIsInstance(money, Money)
         self.assertEqual(currency, money.currency)
 
     def test_initialize_with_currency(self):
-    	currency = CURRENCIES['USD']
-    	money = Money(1000, currency)
+        currency = CURRENCIES['USD']
+        money = Money(1000, currency)
 
-    	self.assertEqual(currency, money.currency)
+        self.assertEqual(currency, money.currency)
 
     def test_initialize_with_inexistent_currency_code(self):
-    	with self.assertRaisesRegexp(CurrencyError, 'Currency does not exist.'):
+        with self.assertRaisesRegexp(CurrencyError, 'Currency does not exist.'):
             Money(1000, 'notexist')
 
     def test_initialize_without_currency(self):
@@ -39,5 +39,3 @@ class MoneyTest(CompatibilityTestCase):
         money = Money(123.36, currency)
 
         self.assertIsInstance(money.amount, Decimal)
-
-

@@ -54,6 +54,8 @@ class Money(object):
         return Decimal(amount).quantize(places, rounding=ROUND_UP)
 
     def __cmp__(self, other):
+        if not other:
+            other = Money(0, self.currency)
         if not isinstance(other, Money):
             raise TypeError("You can only compare Money instances.")
         assert self.currency == other.currency, "Currency mismatch."

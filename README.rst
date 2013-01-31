@@ -21,6 +21,7 @@ Usage
     from pymonon import Money
     money = Money(1000, 'USD')
 
+
 Name
 ----
 

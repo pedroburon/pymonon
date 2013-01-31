@@ -5,7 +5,6 @@ from pymonon import Money
 
 
 class TestBasicOperationsSameCurrency(CompatibilityTestCase):
-
     def test_cmp(self):
         money1 = Money(1000, 'usd')
         money2 = Money(2000, 'usd')
@@ -18,6 +17,10 @@ class TestBasicOperationsSameCurrency(CompatibilityTestCase):
 
         with self.assertRaisesRegexp(TypeError, r"^You can only compare Money instances.$"):
             money < other
+
+    def test_cmp_with_none(self):
+        money = Money(1000, 'usd')
+        self.assertGreater(money, None)
 
     def test_eq(self):
         money1 = Money(1000, 'usd')
